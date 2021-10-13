@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hasan Osman | Personal Portfolio Page</title>
+    <script
+      src="https://kit.fontawesome.com/13e0592400.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--START NAVBAR-->
+
+    <nav id="navbar" class="nav">
+      <h1 class="logo"><a href="index.html">HasanOsman</a></h1>
+
+      <!--<h2 class="sublogo"><a href="index.html">Web Developer</a></h2>-->
+      <!---<input class="menubutton" type="checkbox" id="menubutton" />
+    <label class="showmenuicon" for="menubutton">menu</label>-->
+
+      <ul class="nav-list sidenav menu">
+        <li><a href="#welcome-section" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav( )"
+          >&times;</a
+        >
+      </ul>
+
+      <!--use anuy element to open the sidenav-->
+      <span
+        style="font-family: Bebas Neue; font-size: 1.25rem; cursor: pointer"
+        onclick="openNav( )"
+        >menu</span
+      >
+      <script>
+        function openNav() {
+          document.querySelector(".sidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+          document.querySelector(".sidenav").style.width = "0";
+        }
+      </script>
+    </nav>
+
+    <!--END NAVBAR-->
+    <div id="main">
+      <!-- Hero Section -->
+
+      <!-- More about -->
+
+      <!-- Skills section -->
+
+      <!-- Projects section -->
+
+      <!-- Contact section -->
+
+      <!-- Social accounts - Fixed to the right -->
+
+      <!-- Scroll to top -->
+
+      <!-- Footer section -->
+    </div>
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
