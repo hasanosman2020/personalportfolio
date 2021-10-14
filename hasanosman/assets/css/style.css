@@ -51,6 +51,82 @@ html {
     color:#f0b020;
   }
 
+  .sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f0b020;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+  text-align: center;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  display: block;
+  transition: var(--transition);
+}
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+#menu {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+#menu:hover{
+  color: #f0b020;
+}
+
+@media only screen and (min-width: 599px){
+
+
+  /*
+  #menubutton:not(:checked)~.menu{
+    right: 0;
+  }
+  */
+  #menu {
+    display: none;
+  }
+  
+  .menu {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: flex-end;
+    background: transparent;
+    position: fixed;
+    outline: 2px solid red;
+  }
+
+
+  .menu .nav-link{
+    margin-bottom: 1.5em;
+    font-size:1.05em;  
+  }
+.menu a:hover{
+  color: #f0b020;
+}
+}
+/*
+  label {
+    display: none;
+  }
+}
+
+
   /*
   nav ul {
     display: flex;
@@ -164,35 +240,6 @@ html {
   }
 } 
 */
-.sidenav {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #f0b020;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 50px;
-  text-align: center;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.5rem;
-  color: #010101;
-  display: block;
-  transition: var(--transition);
-}
-
-.sidenav a:hover{
-  color: #f1f1f1;
-}
 
 /*
 .closebtn{
