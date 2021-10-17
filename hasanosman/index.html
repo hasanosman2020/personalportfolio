@@ -39,37 +39,27 @@
   <body>
     <!--START NAVBAR-->
 
-    <nav id="navbar" class="nav">
+    
       <h1 class="logo"><a href="index.html">HasanOsman</a></h1>
+      <h2 class="sub_logo"><a href="index.html"> Web Developer</a></h2>
+      <nav id="navbar" class="nav about_menu"></nav>
+      <div class="about_menu">
+      <input class="menubutton" type="checkbox" id="menubutton">
+      <label class="showmenuicon" for="menubutton">menu</label>
 
-      <!--<h2 class="sublogo"><a href="index.html">Web Developer</a></h2>-->
-      <!---<input class="menubutton" type="checkbox" id="menubutton" />
-    <label class="showmenuicon" for="menubutton">menu</label>-->
+   
 
-      <ul class="nav-list sidenav menu">
+      <ul class="menu">
         <li><a href="#welcome-section" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav( )">
-          &times;
-        </a>
+        <input class="menubutton" type="checkbox" id="menubutton">
+        <label class="hidemenuicon" for="menubutton">
+        <i class="fas fa-times"></i>
+        </label>
       </ul>
-
-      <!--use anuy element to open the sidenav-->
-      <div id="menu" onclick="openNav()">menu</div>
-
-      <script>
-        function openNav() {
-          document.querySelector(".sidenav").style.width = "100%";
-        }
-
-        document.querySelector(".sidenav").addEventListener("onclick");
-        function closeNav() {
-          document.querySelector(".sidenav").style.width = "0";
-        }
-      </script>
-    </nav>
+      </nav>
 
     <!--END NAVBAR-->
     <div id="main">

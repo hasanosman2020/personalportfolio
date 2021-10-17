@@ -28,6 +28,7 @@ html {
   text-decoration: none;
   }
 
+  /*
   nav {
     display: flex;
     position: sticky;
@@ -40,41 +41,56 @@ html {
     background: #fcf2d9;
     border-bottom: 2px solid #f0b020;
   }
-
-  nav h1 {
+*/
+  h1 {
   transition: var(--transition);
   font-family: "Bebas Neue", sans-serif;
+  margin: 0.25rem;
+  margin-bottom: 0;
   }
+.sub_logo {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+  color: var(--textcolour);
+  margin: 0.25rem;
+  margin-top: 0;
+}
 
-  
   nav a:hover {
     color:#f0b020;
   }
 
-  .sidenav {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #f0b020;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 50px;
-  text-align: center;
-}
-.sidenav a {
+  #navbar{
+    outline: 2px solid #f0b020;;
+
+  }
+
+  .menu {
+   transition: 1s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    padding: 2em;
+    padding-top: 4.2em;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    position: fixed;
+    text-align: right;
+    background-color: rgba(240, 176, 33, 1);
+  }
+
+.menu a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1em;
   display: block;
   transition: var(--transition);
+  
 }
-.sidenav a:hover{
+.menu a:hover{
   color: #f1f1f1;
 }
 #menu {
@@ -86,6 +102,100 @@ html {
   color: #f0b020;
 }
 
+.showmenuicon {
+  top: 2em;
+  right: 1em;
+  position: absolute;
+  visibility: visible;
+  color: var(--textcolour);
+  transition: 1s;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.showmenuicon:hover {
+  color: #bf890d;
+  border: 2px solid var(--highlighter);
+}
+
+#menubutton:checked~.menu {
+  right: 70%;
+}
+
+
+#menubutton {
+  position: absolute;
+  z-index: -5;
+  visibility: hidden;
+}
+
+.menu a {
+  color: #010101;
+  z-index: 10;
+}
+
+.menu li {
+  margin-bottom: 1.5em;
+}
+
+.hidemenuicon {
+  position: absolute;
+  visibility: visible;
+  font-family: "Bebas Neue";
+  font-size: 1.5rem;
+  color: #010101;;
+  transition: 1s;
+  cursor: pointer;
+}
+
+/*
+.hidemenuicon:hover {
+  color: white;
+  transition: 0.5s;
+  outline: 2px solid red;
+}
+*/
+
+
+@media only screen and (min-width: 599px) {
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  #menubutton:not(:checked)~.menu {
+    right: 0;
+  }
+
+  .menu {
+  display: flex;
+  padding: 0.5em 1em;
+  justify-content: flex-end;
+  background: transparent;
+  position: fixed;
+}
+  .menu li {
+    margin-left: 1em;
+    font-size: 0.75em;
+  }
+  .menu a:hover {
+    color: #f0b020;
+  }
+  label {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logo, .sub_logo{
+    text-align: center;
+  }
+  .menu {
+    justify-content: space-between;
+  }
+}
+/*
 @media only screen and (min-width: 599px){
 
 
@@ -94,6 +204,8 @@ html {
     right: 0;
   }
   */
+
+  /*
   #menu {
     display: none;
   }
