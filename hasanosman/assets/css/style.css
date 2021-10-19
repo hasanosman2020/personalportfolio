@@ -164,12 +164,22 @@ max-width: 100%;
   margin-top: 5rem;
   width: 40%;
   height: 70%;
+  animation: fadeIn;
+  animation-duration: 4s;
 }
-.aboutme{
+.title_aboutme{
+  text-align: center;
+  margin-top: 1rem;
+}
+.text_aboutme{
   width: 40%;
   padding: 0.625rem;
+  margin-bottom: 1rem;
+  border: 2px solid #f0b020;
   border-radius: 5px;
-  box-shadow: 0px 2px 15px 2px var(--primary_shadow); 
+  box-shadow: 0px 2px 15px 2px; 
+  margin: 0 auto;
+  text-align: justify;
 }
 .aboutme h2{
   line-height: var(--line_height);
@@ -187,9 +197,19 @@ max-width: 100%;
 
 @media only screen and (min-width: 599px) {
 
-  h1 {
-    font-size: 1.7rem;
-  }
+  #main {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0, 599px) minmax(1em, 1fr);
+  padding: 0.5em 1em;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  /*background-color: var(--maincolour);*/
+}
+
+#main > * {
+  grid-column: 2 / -2;
+}
 
   #menubutton:not(:checked)~.menu {
     right: 0;
@@ -212,8 +232,16 @@ max-width: 100%;
   label {
     display: none;
   }
-}
 
+.welcome_section img{
+  margin-left: 2rem;
+  width: auto;
+  height: auto;
+}
+.text_aboutme {
+  width: 100%;
+}
+}
 @media only screen and (min-width: 992px) {
   .logo, .sub_logo{
     text-align: center;
@@ -221,7 +249,7 @@ max-width: 100%;
   .menu {
     justify-content: space-between;
   }
-}
+}   
 /*
 @media only screen and (min-width: 599px){
 
