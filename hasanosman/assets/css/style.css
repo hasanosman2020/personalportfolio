@@ -5,7 +5,9 @@ root{
   --borderheadfoot: #f0b020;
   --maincolour: #DBDDEA;
   --bgheadfoot: #1e3888;
-  --transition: 0.5s;/*cccccc/*#f0b020*/
+  --transition: 0.5s;
+  --primary_shadow: #866009; 
+  --line_height: 1.7rem;
 }
 
 *{
@@ -17,7 +19,7 @@ root{
     }
 
 html {
-    font-size: 100%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
   }
 
@@ -62,8 +64,10 @@ html {
   }
 
   #navbar{
-    outline: 2px solid #f0b020;;
-
+    outline: 2px solid #f0b020;
+    width: 100%;
+    position: fixed;
+    background-color: white;
   }
 
   .menu {
@@ -147,6 +151,29 @@ html {
   color: #010101;;
   transition: 1s;
   cursor: pointer;
+}
+
+.welcome_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+max-width: 100%;
+}
+.welcome_section img{
+  margin-top: 5rem;
+  width: 40%;
+  height: 70%;
+}
+.aboutme{
+  width: 40%;
+  padding: 0.625rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px 2px var(--primary_shadow); 
+}
+.aboutme h2{
+  line-height: var(--line_height);
+  padding: 0.3rem 0;
 }
 
 /*
