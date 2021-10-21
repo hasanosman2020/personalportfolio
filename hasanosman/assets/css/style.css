@@ -159,6 +159,7 @@ html {
   align-items: center;
   justify-content: center;
 max-width: 100%;
+
 }
 .welcome_section img{
   margin-top: 5rem;
@@ -169,11 +170,13 @@ max-width: 100%;
 }
 .title_aboutme{
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background: #ebdab3;
 }
 .text_aboutme{
-  width: 40%;
-  padding: 0.625rem;
+  max-width: 80%;
+  margin-top: 3rem;
   margin-bottom: 1rem;
   border: 2px solid #f0b020;
   border-radius: 5px;
@@ -184,6 +187,27 @@ max-width: 100%;
 .aboutme h2{
   line-height: var(--line_height);
   padding: 0.3rem 0;
+  margin-bottom: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.skills_section{
+  margin: 5em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 100%;
+}
+.skill_header {
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 1rem;
+  background: #ebdab3;
+  text-align: center;
+  margin-top: 1rem;
+}
+.skills_icon {
+  margin-bottom: 3rem;
+  animation: fadeIn;
 }
 
 /*
@@ -194,12 +218,12 @@ max-width: 100%;
 }
 */
 
-
+/* MEDIA QUERIES FOR TABLET-SIZE DEVICES*/
 @media only screen and (min-width: 599px) {
 
   #main {
   display: grid;
-  grid-template-columns: minmax(1em, 1fr) minmax(0, 599px) minmax(1em, 1fr);
+  grid-template-columns: minmax(1em, 1fr) minmax(599px, 1023px) minmax(1em, 1fr);
   padding: 0.5em 1em;
   height: 100%;
   overflow: hidden;
@@ -242,6 +266,8 @@ max-width: 100%;
   width: 100%;
 }
 }
+
+/*MEDIA QUERIES FOR DESKTOP-SIZE DEVICES*/
 @media only screen and (min-width: 992px) {
   .logo, .sub_logo{
     text-align: center;
@@ -425,3 +451,16 @@ max-width: 100%;
   }
 }
 */
+
+/* ATTRIBUTES 
+html icon: <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+css icon: <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+javascript icon:  <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+nodejs icon: <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+github: <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+bootstrap icon: <div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
