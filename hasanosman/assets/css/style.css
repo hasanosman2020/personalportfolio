@@ -11,8 +11,6 @@ root{
 }
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     list-style: none;
     color: #010101;
@@ -25,6 +23,7 @@ html {
 
   body {
     background: white;
+    margin: 0 1rem;
   }
   a{
   text-decoration: none;
@@ -64,10 +63,10 @@ html {
   }
 
   #navbar{
-    outline: 2px solid #f0b020;
     width: 100%;
     position: fixed;
     background-color: white;
+    border-bottom: 2px solid #f0b020;
   }
 
   .menu {
@@ -172,17 +171,16 @@ max-width: 100%;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background: #ebdab3;
+  background: #f9edd3;
 }
 .text_aboutme{
-  max-width: 80%;
+  max-width: 100%;
   margin-top: 3rem;
   margin-bottom: 1rem;
   border: 2px solid #f0b020;
-  border-radius: 5px;
+  border-radius: 2px;
   box-shadow: 0px 2px 15px 2px; 
-  margin: 0 auto;
-  text-align: justify;
+  text-align: center;
 }
 .aboutme h2{
   line-height: var(--line_height);
@@ -190,24 +188,18 @@ max-width: 100%;
   margin-bottom: 1rem;
   font-family: 'Bebas Neue', sans-serif;
 }
-
+.skill_header{
+  font-family: 'Bebas Neue', sans-serif;
+}
 .skills_section{
   margin: 5em auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  max-width: 100%;
-}
-.skill_header {
-  font-family: 'Bebas Neue', sans-serif;
-  margin-bottom: 1rem;
-  background: #ebdab3;
-  text-align: center;
-  margin-top: 1rem;
-}
-.skills_icon {
+  align-items: center;        
+  background: #f0b020;                              
+}                                                 .skills_icon {
   margin-bottom: 3rem;
-  animation: fadeIn;
 }
 
 /*
@@ -226,7 +218,6 @@ max-width: 100%;
   grid-template-columns: minmax(1em, 1fr) minmax(599px, 1023px) minmax(1em, 1fr);
   padding: 0.5em 1em;
   height: 100%;
-  overflow: hidden;
   margin-bottom: 1rem;
   /*background-color: var(--maincolour);*/
 }
