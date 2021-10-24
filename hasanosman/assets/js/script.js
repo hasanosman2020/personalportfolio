@@ -1,5 +1,9 @@
-/*
-const mediaQuery = window.matchMedia('(min-width: 599px)')
-if (mediaQuery.matches) {
-  document.querySelector('#closebtn').style = 'visibility: none'
-}*/
+//scroll to top functionality
+const scrollup = document.querySelector('#scroll_up')
+
+scrollup.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    left: 0
+  })
+})
