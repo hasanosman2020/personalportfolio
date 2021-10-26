@@ -170,6 +170,29 @@
       <!-- END PROJECTS SECTION -->
 
       <!-- START CONTACT ME SECTION -->
+      <section class='contactme_section' id='contact'>
+        <h2 class='title_contactme'>Get In Touch!</h2>
+        <div class='container mycontact'>
+          <script src='https://www.google.com/recaptcha/api.js'></script>
+          <div class='form_container'>
+            <form method='post' id='user_form'>
+              <label for='name'>Your Name:</label>
+              <input id='name' type='text'  maxlength='50'>
+              <label for='email'>Email Address:</label>
+              <input id='email' type='email' name='Email' required maxlength='50'>
+              <label for='message'>Message:</label>
+              <textarea id='message' name='Message' rows='10' maxlength='1000' required></textarea>
+              <div class='g-recaptcha' data-sitekey=''></div>
+              <button class='btn_primary' type='submit'>Send Message</button>
+            </form>
+            <div id='success_message'>
+            <h3>Form Submitted Successfully!</h3>
+            <p>I will get in touch soon!</p>
+            </div>
+            <div id='error_message' style='width:100%; height:100%;'>
+            <h3>Error!</h3>Sorry there was an error sending your form. Please try again.</div>
+          </div>        </div>
+      </section>
 
       <!-- END CONTACT ME SECTION -->
 
