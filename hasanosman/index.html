@@ -8,18 +8,6 @@
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
 
     <!-- Animate CSS CDN -->
     <link
@@ -35,6 +23,7 @@
       src="https://kit.fontawesome.com/13e0592400.js"
       crossorigin="anonymous"
     ></script>
+    <script src='form.js'></script>
   </head>
   <body>
     <!--START NAVBAR-->
@@ -144,27 +133,51 @@
         <h2 class='title_projects'>Recent Projects</h2>
         <div class='myprojects'>
 
-          <div class='project_container project_card'>
-            <img src='assets/images/expensetracker.png' alt='expense_tracker' loading='lazy' class='project_pic'>
-            <h3 class='project_title'>Expense Tracker</h3>
+          <div class='project'>
+            <a href='#'>
+              <img src='assets/images/projects/webpacktravelapp.png' alt='webpack travel app'>
+            </a>
+            <h3 class='project_title'>Webpack Travel App</h3>
             <p class='project_details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, fugiat. Atque repellendus voluptates eveniet magni porro similique voluptatum doloremque dolore dignissimos possimus! Quasi assumenda quaerat facilis labore. Aut, tenetur delectus.</p>
-            <a href='#' target='blank' class='project_link'>Check it out!</a>
-        </div>
+            <a href="" class="btn btn_light">
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a href="" class="btn btn_dark">
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
+          
+            <div class='project'>
+            <a href='#'>
+              <img src='assets/images/projects/andromeda.png' alt='webpack travel app'>
+            </a>
+            <h3 class='project_title'>Webpack Travel App</h3>
+            <p class='project_details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, fugiat. Atque repellendus voluptates eveniet magni porro similique voluptatum doloremque dolore dignissimos possimus! Quasi assumenda quaerat facilis labore. Aut, tenetur delectus.</p>
+            <a href="" class="btn btn_light">
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a href="" class="btn btn_dark">
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
 
-         <div class='project_container project_card'>
-            <img src='assets/images/expensetracker.png' alt='expense_tracker' loading='lazy' class='project_pic'>
-            <h3 class='project_title'>Expense Tracker</h3>
+            <div class='project'>
+            <a href='#'>
+              <img src='assets/images/projects/webpacktravelapp.png' alt='webpack travel app'>
+            </a>
+            <h3 class='project_title'>Webpack Travel App</h3>
             <p class='project_details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, fugiat. Atque repellendus voluptates eveniet magni porro similique voluptatum doloremque dolore dignissimos possimus! Quasi assumenda quaerat facilis labore. Aut, tenetur delectus.</p>
-            <a href='#' target='blank' class='project_link'>Check it out!</a>
-        </div>
+            <a href="" class="btn btn_light">
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a href="" class="btn btn_dark">
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
+            </div>
+        
 
-         <div class='project_container project_card'>
-            <img src='assets/images/expensetracker.png' alt='expense_tracker' loading='lazy' class='project_pic'>
-            <h3 class='project_title'>Expense Tracker</h3>
-            <p class='project_details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, fugiat. Atque repellendus voluptates eveniet magni porro similique voluptatum doloremque dolore dignissimos possimus! Quasi assumenda quaerat facilis labore. Aut, tenetur delectus.</p>
-            <a href='#' target='blank' class='project_link'>Check it out!</a>
-        </div>
-        </div>
+         
       </section>
 
       <!-- END PROJECTS SECTION -->
@@ -173,7 +186,6 @@
       <section class='contactme_section' id='contact'>
         <h2 class='title_contactme'>Get In Touch!</h2>
         <div class='container mycontact'>
-          <script src='https://www.google.com/recaptcha/api.js'></script>
           <div class='form_container'>
             <form method='post' id='user_form'>
               <label for='name'>Your Name:</label>
@@ -181,16 +193,9 @@
               <label for='email'>Email Address:</label>
               <input id='email' type='email' name='Email' required maxlength='50'>
               <label for='message'>Message:</label>
-              <textarea id='message' name='Message' rows='10' maxlength='1000' required></textarea>
-              <div class='g-recaptcha' data-sitekey=''></div>
+              <textarea id='message' name='Message' rows='1' minlength='10' required></textarea>
               <button class='btn_primary' type='submit'>Send Message</button>
             </form>
-            <div id='success_message'>
-            <h3>Form Submitted Successfully!</h3>
-            <p>I will get in touch soon!</p>
-            </div>
-            <div id='error_message' style='width:100%; height:100%;'>
-            <h3>Error!</h3>Sorry there was an error sending your form. Please try again.</div>
           </div>        </div>
       </section>
 
@@ -206,17 +211,8 @@
       <!-- Scroll to top -->
 
       <!-- Footer section -->
-  
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    
+    
 
     <!-- Website scripts -->
     <script src="assets/js/script.js"></script>
