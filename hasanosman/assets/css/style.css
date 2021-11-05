@@ -193,7 +193,8 @@ max-width: 100%;
 }
 .myskills,
 .myprojects{
-  margin: 1em auto;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -204,6 +205,8 @@ max-width: 100%;
   box-shadow: 0px 2px 15px 2px;                               
 }
 .form_container{
+  display: grid;;
+  
   margin: 1em auto;
   width: 90%;    
   background: white;
@@ -231,20 +234,55 @@ max-width: 100%;
 
 ul li{
   display: inline-block;
+  list-style: none;
+  
 }
-
-
 
 ul li::before{
   content:'\2022';
   color: #f0b020;
   font-weight: bold;
-  display: inline-block;
   width: 2rem;
-  margin-left: -1rem;
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+  
 }
 
-
+details{
+  /*border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;*/
+}
+/*
+summary{
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+details[open]{
+  padding: 0.5em;
+}
+details[open] summary{
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}*/
+details >summary{
+  padding: 2px 6px;
+  width: 15em;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px #cc8f00;;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+details>ul{
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 2px 6px;
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 4px black;
+}
 
 
 
