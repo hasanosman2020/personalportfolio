@@ -171,10 +171,10 @@ max-width: 100%;
 }
 .text_aboutme{
   max-width: 100%;
-  border: 2px solid #f0b020;
-  border-radius: 2px;
-  box-shadow: 0px 2px 15px 2px; 
-  text-align: left;
+  /*border: 2px solid #f0b020;*/
+  /*border-radius: 2px;*/
+  /*box-shadow: 0px 2px 15px 2px; */
+  text-align: justify; 
   padding: 1rem;
 }
 .text_aboutme a{
@@ -248,12 +248,15 @@ ul li::before{
   
 }
 
-details{
-  /*border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0.5em 0.5em 0;*/
-}
 /*
+details{
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  border: 2px solid red;
+}*/
+
+
 summary{
   font-weight: bold;
   margin: -0.5em -0.5em 0;
@@ -261,15 +264,16 @@ summary{
 }
 details[open]{
   padding: 0.5em;
+  border: 2px solid red;
 }
 details[open] summary{
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
-}*/
+}
 details >summary{
-  padding: 2px 6px;
+  padding:3px;
   width: 15em;
-  background-color: #ddd;
+  /*background-color: #ddd;*/
   border: none;
   box-shadow: 3px 3px 4px #cc8f00;;
   cursor: pointer;
@@ -279,11 +283,10 @@ details >summary{
 details>ul{
   border-radius: 0 0 10px 10px;
   background-color: #ddd;
-  padding: 2px 6px;
+  width: 100%;
   margin-bottom: 1rem;
   box-shadow: 3px 3px 4px black;
 }
-
 
 
 .btn{
@@ -559,3 +562,9 @@ github: <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfe
 bootstrap icon: <div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 scrolltotop: <div>Icons made by <a href="https://www.flaticon.com/authors/mayor-icons" title="Mayor Icons">Mayor Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+
+/*image for blog website: Photo by Luke Webb from Pexels*/
+
+
+/*Photo by Yugantar Sambhangphe from Pexels*/

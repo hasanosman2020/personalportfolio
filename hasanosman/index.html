@@ -19,11 +19,11 @@
       rel="stylesheet"
     />
     <title>Hasan Osman | Personal Portfolio Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <script
       src="https://kit.fontawesome.com/13e0592400.js"
       crossorigin="anonymous"
     ></script>
-    <script src='script.js'></script>
   </head>
   <body>
     <!--START NAVBAR-->
@@ -49,7 +49,7 @@
     </nav>
 
     <!--END NAVBAR-->
-    < id="main">
+    <div id="main">
       <!-- START WELCOME SECTION -->
       <section class="welcome_section" id="welcome_section">
         <img
@@ -61,7 +61,7 @@
         <div class="aboutme animate_fadeIn">
           <h2 class="title_aboutme">About Me</h2>
           <p class="text_aboutme">
-            Check out my <a href='www.github.com'>Github profile</a>
+            Check out my <a href='www.github.com'>Github profile</a><br \>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             ullam porro sequi ipsum quis beatae corporis explicabo praesentium,
             temporibus quo reprehenderit accusantium voluptates cumque quos.
@@ -222,30 +222,52 @@
             <details>
               <summary>Technologies Used</summary>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
               </ul>
             </details>
             <details>
               <summary>Project</summary>
               
-                <p>A responsive multi-section landing page with a dynamically updating navigational menu based on the amount of content that is added to the page.</p>
+                A responsive multi-section landing page with a dynamically updating navigational menu based on the amount of content that is added to the page.
             
 
             </details>
-            <p class='project_details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, fugiat. Atque repellendus voluptates eveniet magni porro similique voluptatum doloremque dolore dignissimos possimus! Quasi assumenda quaerat facilis labore. Aut, tenetur delectus.</p>
-            <a href="" class="btn btn_light">
-                <i class="fas fa-eye"></i> Project
-              </a>
-              <a href="" class="btn btn_dark">
+            
+              <a href="https://github.com/hasanosman2020/udacityFEND2_landingpage/tree/main" target=blank class="btn btn_dark">
                 <i class="fab fa-github"></i> Github
               </a>
             </div>
           </div>
             
+          <div class='myprojects'>
+            <div class='project'>
+              <h3 class='project_title'>Personal Blog Website</h3>
+            <a href='#'>
+              <img src='assets/images/projects/blog_study.jpg' alt='silver clouds in a clear sky'>
+            </a>
+            <details>
+              <summary>Technologies Used</summary>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Web API</li>
+            </ul>
+            </details>
+            <details>
+              <summary>Project</summary>
+              <ul><li>Creating an asynchronous web app that uses Web API and user data to dynamically update the UI for a weather journal app. </li></ul>
+            </details>
+              <a href="#" class="btn btn_dark">
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
+            </div>
+
          
       </section>
 
@@ -254,6 +276,7 @@
       <!-- START CONTACT ME SECTION -->
       <section class='contactme_section' id='contact'>
         <h2 class='title_contactme'>Get In Touch!</h2>
+        <address>Send a message to <a href='mailto:hasan79.hoa@gmail.com'>Hasan Al-Ahmar</a></address>
         <div class='container mycontact'>
           <div class='form_container'>
             <form method='post' id='user_form'>
@@ -285,5 +308,6 @@
 
     <!-- Website scripts -->
     <script src="assets/js/script.js"></script>
+    </div>
   </body>
 </html>
