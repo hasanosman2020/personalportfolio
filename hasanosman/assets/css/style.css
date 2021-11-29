@@ -19,6 +19,10 @@ root{
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
   }
 
   body {
@@ -259,15 +263,14 @@ details{
 
 summary{
   font-weight: bold;
-  margin: -0.5em -0.5em 0;
+  margin: 0.5em;
   padding: 0.5em;
 }
 details[open]{
-  padding: 0.5em;
-  border: 2px solid red;
+  padding: 1em;
 }
 details[open] summary{
-  border-bottom: 1px solid #aaa;
+  border-bottom: 2px solid black:;
   margin-bottom: 0.5em;
 }
 details >summary{
@@ -282,7 +285,6 @@ details >summary{
 }
 details>ul{
   border-radius: 0 0 10px 10px;
-  background-color: #ddd;
   width: 100%;
   margin-bottom: 1rem;
   box-shadow: 3px 3px 4px black;
@@ -294,6 +296,9 @@ details>ul{
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  text-decoration: underline;
+  color:rgb(160, 109, 0);
+  font-family: bold;
 }
 .btn:hover{
   background: #f0b020;
@@ -302,6 +307,51 @@ details>ul{
 i:hover{
   color: white;
 }
+#gitbtn{
+  border-bottom: 5px solid #f0b020;
+  margin-bottom: 0.5rem;
+
+  }
+
+footer{
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  padding: 0.5em 1em;
+  color: black;
+  background-color: white;
+ border-top: 2px solid #f0b020;
+  /*var(--bgcolourhf)*/
+  
+  font-size: 0.7rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  display: flex;
+
+flex-direction: column;
+}
+/*
+  width: 100%;
+    background-color: white;
+    border-top: 2px solid #f0b020;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    
+    top: 100vh;
+    min-height: 100%;
+}
+*/
+.fa-phone,
+.fa-envelope {
+  margin-right: 0.5rem;
+}
+/*
+a[href^="tel"]:before{
+  content:"\260e";
+  margin-right: 0.5rem;
+}*/
 /* MEDIA QUERIES FOR TABLET-SIZE DEVICES*/
 @media only screen and (min-width: 599px) {
 
