@@ -28,6 +28,7 @@ html {
   body {
     background: white;
     margin: 0 1rem;
+    height: 80vh;
   }
   a{
   text-decoration: none;
@@ -315,10 +316,10 @@ i:hover{
 
 footer{
   bottom: 0;
-  height: 10%;
+  height:10%;
   width: 100%;
-  position: fixed;
-  padding: 0.5em 1em;
+  position: sticky;
+  padding: 0.2em;
   color: black;
   background-color: white;
  border-top: 2px solid #f0b020;
@@ -347,6 +348,7 @@ flex-direction: column;
 .fa-envelope {
   margin-right: 0.5rem;
 }
+
 /*
 a[href^="tel"]:before{
   content:"\260e";
