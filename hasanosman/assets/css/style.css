@@ -20,15 +20,17 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: scroll;
+   /* overflow-x: hidden;
+    overflow-y: scroll;*/
+    
 
   }
 
   body {
     background: white;
     margin: 0 1rem;
-    height: 80vh;
+    height: 100%;
+    min-height: calc(100vh -20px);
   }
   a{
   text-decoration: none;
@@ -75,6 +77,8 @@ html {
   }
 
   .menu {
+    display: flex;
+    flex-direction: column;
    transition: 1s;
     width: 100%;
     height: 100%;
@@ -209,16 +213,7 @@ max-width: 100%;
   border-radius: 2px;
   box-shadow: 0px 2px 15px 2px;                               
 }
-.form_container{
-  display: grid;;
-  
-  margin: 1em auto;
-  width: 90%;    
-  background: white;
-  border: 2px solid #f0b020;;
-  border-radius: 2px;
-  box-shadow: 0px 2px 15px 2px;                             
-}                                                             
+                                 
 .skills_icon {
   margin-bottom: 3rem;
 }
@@ -310,10 +305,40 @@ i:hover{
 }
 #gitbtn{
   margin-bottom: 0.5rem;
-  outline: 2px solid red;
+  
 
   }
 
+  .mydetails{
+    display: flex;
+    flex-direction: column;
+    margin: 1.75rem 0;
+
+  }
+  .mydetails li::before{
+    content:'\2022';
+  color: transparent;
+  }
+  .mydetails .section-item{
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+  }
+  
+
+  footer {
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  padding: 0.5em 1em;
+  color: var(--textcolour);
+  border-top: 2px solid #f0b020;
+  /*var(--bgcolourhf)*/
+  background: white;
+  font-size: 1rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+  /*
 footer{
   bottom: 0;
   height:10%;
@@ -324,14 +349,14 @@ footer{
   background-color: white;
  border-top: 2px solid #f0b020;
   /*var(--bgcolourhf)*/
-  
+  /*
   font-size: 0.7rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   display: flex;
 
 flex-direction: column;
-}
+}*/
 /*
   width: 100%;
     background-color: white;
@@ -376,6 +401,7 @@ a[href^="tel"]:before{
 
   .menu {
   display: flex;
+  flex-direction: row;
   padding: 0.5em 1em;
   justify-content: flex-end;
   background: transparent;
@@ -415,6 +441,10 @@ a[href^="tel"]:before{
   height: 3rem;
   cursor: pointer;
 }
+/*MEDIA QUERIES FOR MEDIUM DEVICES (portrait tablets and large phones 768px and up*/
+@media only screen and (min-width: 768px){...}
+
+
 /*MEDIA QUERIES FOR DESKTOP-SIZE DEVICES*/
 @media only screen and (min-width: 992px) {
   .logo, .sub_logo{
